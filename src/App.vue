@@ -27,7 +27,7 @@ return{
 async fetchWeatherData(city){
   console.log("dat fetching strated")
   this.loader=true
-  const res=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cd09a530ece24614bd775526250603&q=${city}&days=5&aqi=no&alerts=no`)
+  const res=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cd09a530ece24614bd775526250603&q=${city}&days=5&aqi=no&alerts=no`)
   
 
   console.log("the response coming from the data is",res)
